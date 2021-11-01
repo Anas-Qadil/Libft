@@ -1,30 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/01 10:38:18 by aqadil            #+#    #+#             */
-/*   Updated: 2021/11/01 10:44:43 by aqadil           ###   ########.fr       */
+/*   Created: 2021/11/01 11:21:32 by aqadil            #+#    #+#             */
+/*   Updated: 2021/11/01 11:31:16 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-#include <ctype.h>
 
-int ft_isdigit(int c) 
+size_t ft_strlen(const char *s)
 {
-    if (c >= 0 && c <= 9)
-        return (1);
-    return (0);
+    int i;
+
+    i = 0;
+    while(s[i] != '\0')
+        i++;
+    return (i);
 }
+
 int main(int argc, char **argv)
 {
-	printf("%c", argv[1][0]);
-
-	printf("\n-----isdigit system-----\n");	
-	printf("%d", isdigit(argv[1][0]));
-	printf("\n-----my ft_isalpha-----\n");
-	printf("%d", ft_isdigit((argv[1][0] - 48)));
+    printf("%zu", ft_strlen(argv[1]));    
 }

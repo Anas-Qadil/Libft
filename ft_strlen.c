@@ -6,7 +6,7 @@
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 17:01:23 by aqadil            #+#    #+#             */
-/*   Updated: 2021/11/02 17:21:04 by aqadil           ###   ########.fr       */
+/*   Updated: 2021/11/02 17:46:51 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 size_t	ft_strlen(const char *str)
 {
-	size_t i;
+	int i;
 
 	i = 0;
-	while (str[i])
+	while (*str++)
 		i++;
 	return (i);
 }

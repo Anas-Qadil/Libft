@@ -5,43 +5,33 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/01 14:01:38 by aqadil            #+#    #+#             */
-/*   Updated: 2021/11/02 10:01:32 by aqadil           ###   ########.fr       */
+/*   Created: 2019/10/20 20:06:46 by zakdim            #+#    #+#             */
+/*   Updated: 2021/11/02 16:55:04 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
+#include "libft.h"
 
-void    *ft_memmove(void *dest, const void *src, size_t len)
+void		*ft_memmove(void *dst, const void *src, size_t len)
 {
-    char *temp;
-    
-    temp = (char *)dest;
+	char	*dst2;
+	char	*src2;
+	size_t	i;
 
-    if (dest > src)
-        while (len--)
-            ((char *)(dest))[len] = ((char *)src)[len];
-    else
-        while(len--)
-            *(char *)dest++ = *(char *)src++;
-    return (temp);
-}
-
-int main()
-{
-    char str[100] = "Learningisfun";
-    char *first, *second;
-    first = str;
-    second = str;
-    printf("Original string :%s\n ", str);
-    
-    memcpy(first + 8, first, 10);
-    printf("memcpy overlap : %s\n ", str);
-
-    memmove(second + 8, first, 10);
-    printf("memmove overlap : %s\n ", str);
- 
-    return 0;
+	i = 0;
+	dst2 = (char *)dst;
+	src2 = (char *)src;
+	if (dst == 0 && src == 0)
+		return (0);
+	if (dst2 > src2)
+	{
+		while (len)
+		{
+			len--;
+			dst2[len] = src2[len];
+		}
+	}
+	if (dst2 <= src2)
+		ft_memcpy(dst2, src2, len);
+	return ((void *)dst);
 }

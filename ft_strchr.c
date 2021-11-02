@@ -5,28 +5,29 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/01 15:51:38 by aqadil            #+#    #+#             */
-/*   Updated: 2021/11/01 16:07:00 by aqadil           ###   ########.fr       */
+/*   Created: 2019/10/19 11:06:45 by zakdim            #+#    #+#             */
+/*   Updated: 2021/11/02 16:54:55 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
-char    *ft_strchr(const char *s, int c)
+char		*ft_strchr(const char *s, int c)
 {
-    while (*s)
-    {
-        if (c == *s)
-            return ((char *)s);
-        s++;
-    }
-    return (0);
-}
+	char	c3;
+	char	*str;
+	int		i;
 
-int main(int argc, char **argv)
-{
-    char *s = "hello world";
-    printf("%s\n", ft_strchr(s, 'o'));
-    printf("%s", strchr(s, 'o'));
+	c3 = (char)c;
+	str = (char *)s;
+	i = 0;
+	if (c3 == '\0')
+		return (str + ft_strlen(str));
+	while (str[i])
+	{
+		if (str[i] == c3)
+			return (str + i);
+		i++;
+	}
+	return (NULL);
 }

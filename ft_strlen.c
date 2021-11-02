@@ -5,24 +5,19 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/01 11:21:32 by aqadil            #+#    #+#             */
-/*   Updated: 2021/11/01 11:31:16 by aqadil           ###   ########.fr       */
+/*   Created: 2019/10/16 12:51:27 by zakdim            #+#    #+#             */
+/*   Updated: 2021/11/02 16:54:49 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
-size_t ft_strlen(const char *s)
+size_t	ft_strlen(const char *str)
 {
-    int i;
+	size_t i;
 
-    i = 0;
-    while(s[i] != '\0')
-        i++;
-    return (i);
-}
-
-int main(int argc, char **argv)
-{
-    printf("%zu", ft_strlen(argv[1]));    
+	i = 0;
+	while (str[i])
+		i++;
+	return (i);
 }

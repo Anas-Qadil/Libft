@@ -5,28 +5,17 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/01 10:25:26 by aqadil            #+#    #+#             */
-/*   Updated: 2021/11/01 10:33:44 by aqadil           ###   ########.fr       */
+/*   Created: 2019/10/18 08:56:09 by zakdim            #+#    #+#             */
+/*   Updated: 2021/11/02 16:55:29 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
-#include<stdio.h>
-#include<ctype.h>
-
-int	ft_isalpha(int c)
+int		ft_isalpha(int c)
 {
-	if((c <= 'z' && c >= 'a') || (c <= 'Z' && c >= 'A'))
+	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
 		return (1);
-	return(0);
-}
-
-int main(int argc, char **argv)
-{
-	printf("%c", argv[1][0]);
-
-	printf("\n-----isalpha system-----\n");	
-	printf("%d", isalpha(argv[1][0]));
-	printf("\n-----my ft_isalpha-----\n");
-	printf("%d", ft_isalpha(argv[1][0]));
+	else
+		return (0);
 }

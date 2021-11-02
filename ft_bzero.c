@@ -5,26 +5,23 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/01 13:22:05 by aqadil            #+#    #+#             */
-/*   Updated: 2021/11/02 09:08:01 by aqadil           ###   ########.fr       */
+/*   Created: 2019/10/17 08:48:32 by zakdim            #+#    #+#             */
+/*   Updated: 2021/11/02 16:55:36 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
-void    ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-    while(n--)
-        *(char *)s++ = 0;
-}
+	size_t		cont;
+	char		*s2;
 
-int main(void)
-{
-    char arr[20] = "hello wolrd";
-    int    i = 20;
-    
-    ft_bzero(arr, 4);
-    while(i--)
-        printf("%c", arr[i]);
+	cont = 0;
+	s2 = (char *)s;
+	while (cont < n)
+	{
+		s2[cont] = 0;
+		cont++;
+	}
 }

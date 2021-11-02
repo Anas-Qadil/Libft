@@ -6,7 +6,7 @@
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 17:20:05 by aqadil            #+#    #+#             */
-/*   Updated: 2021/11/02 17:20:12 by aqadil           ###   ########.fr       */
+/*   Updated: 2021/11/02 17:38:55 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,10 @@ void		*ft_memmove(void *dst, const void *src, size_t len)
 		}
 	}
 	if (dst2 <= src2)
-		ft_memcpy(dst2, src2, len);
+		while (i < len)
+			{
+				dst2[i] = src2[i];
+				i++;
+			}
 	return ((void *)dst);
 }

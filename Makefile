@@ -5,8 +5,8 @@
 #                                                     +:+ +:+         +:+      #
 #    By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2019/10/18 12:15:16 by zakdim            #+#    #+#              #
-#    Updated: 2021/11/02 16:57:30 by aqadil           ###   ########.fr        #
+#    Created: 2021/11/02 17:26:28 by aqadil            #+#    #+#              #
+#    Updated: 2021/11/02 17:28:11 by aqadil           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,7 +33,9 @@ SRC =   ft_memset.c     \
 		ft_strchr.c     \
 		ft_strrchr.c    \
 		ft_strncmp.c    \
+		ft_strlcpy.c    \
 		ft_strlcat.c    \
+		ft_strnstr.c    \
 		ft_atoi.c       \
 
 

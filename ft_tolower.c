@@ -1,30 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/01 10:57:48 by aqadil            #+#    #+#             */
-/*   Updated: 2021/11/01 15:23:49 by aqadil           ###   ########.fr       */
+/*   Created: 2021/11/01 15:47:50 by aqadil            #+#    #+#             */
+/*   Updated: 2021/11/01 15:48:30 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <ctype.h>
 
-int ft_isascii(int c) 
+int	ft_tolower(int c)
 {
-    if (c >= 0 && c <= 127)
-        return (1);
-    return (0);
+	if (c >= 'A' && c <= 'Z')
+		return (c + 32);
+	return (c);
 }
+
 int main(int argc, char **argv)
 {
-	printf("%c", argv[1][0]);
-
-	printf("\n-----isdigit system-----\n");	
-	printf("%d", isascii(argv[1][0]));
-	printf("\n-----my ft_isalpha-----\n");
-	printf("%d", ft_isascii((argv[1][0])));
+	printf("\n%c\n",tolower(argv[1][0]));
+	printf("%c\n",ft_tolower(argv[1][0]));	
 }

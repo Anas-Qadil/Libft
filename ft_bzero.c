@@ -1,30 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/01 10:57:48 by aqadil            #+#    #+#             */
-/*   Updated: 2021/11/01 15:23:49 by aqadil           ###   ########.fr       */
+/*   Created: 2021/11/01 13:22:05 by aqadil            #+#    #+#             */
+/*   Updated: 2021/11/02 09:08:01 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-#include <ctype.h>
+#include <string.h>
 
-int ft_isascii(int c) 
+void    ft_bzero(void *s, size_t n)
 {
-    if (c >= 0 && c <= 127)
-        return (1);
-    return (0);
+    while(n--)
+        *(char *)s++ = 0;
 }
-int main(int argc, char **argv)
-{
-	printf("%c", argv[1][0]);
 
-	printf("\n-----isdigit system-----\n");	
-	printf("%d", isascii(argv[1][0]));
-	printf("\n-----my ft_isalpha-----\n");
-	printf("%d", ft_isascii((argv[1][0])));
+int main(void)
+{
+    char arr[20] = "hello wolrd";
+    int    i = 20;
+    
+    ft_bzero(arr, 4);
+    while(i--)
+        printf("%c", arr[i]);
 }

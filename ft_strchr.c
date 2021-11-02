@@ -1,30 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/01 10:57:48 by aqadil            #+#    #+#             */
-/*   Updated: 2021/11/01 15:23:49 by aqadil           ###   ########.fr       */
+/*   Created: 2021/11/01 15:51:38 by aqadil            #+#    #+#             */
+/*   Updated: 2021/11/01 16:07:00 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-#include <ctype.h>
+#include <string.h>
 
-int ft_isascii(int c) 
+char    *ft_strchr(const char *s, int c)
 {
-    if (c >= 0 && c <= 127)
-        return (1);
+    while (*s)
+    {
+        if (c == *s)
+            return ((char *)s);
+        s++;
+    }
     return (0);
 }
+
 int main(int argc, char **argv)
 {
-	printf("%c", argv[1][0]);
-
-	printf("\n-----isdigit system-----\n");	
-	printf("%d", isascii(argv[1][0]));
-	printf("\n-----my ft_isalpha-----\n");
-	printf("%d", ft_isascii((argv[1][0])));
+    char *s = "hello world";
+    printf("%s\n", ft_strchr(s, 'o'));
+    printf("%s", strchr(s, 'o'));
 }

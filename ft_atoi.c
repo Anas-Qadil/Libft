@@ -6,7 +6,7 @@
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 17:05:08 by aqadil            #+#    #+#             */
-/*   Updated: 2021/11/02 17:05:38 by aqadil           ###   ########.fr       */
+/*   Updated: 2021/11/02 18:48:41 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	ft_atoi(const char *str)
 {
 	int j;
 	int len;
-	int res;
+	long int res;
 
 	j = 0;
 	len = 1;

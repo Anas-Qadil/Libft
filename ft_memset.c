@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/16 16:08:38 by zakdim            #+#    #+#             */
-/*   Updated: 2021/11/02 16:55:00 by aqadil           ###   ########.fr       */
+/*   Created: 2021/11/02 17:20:18 by aqadil            #+#    #+#             */
+/*   Updated: 2021/11/02 17:20:24 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdio.h>
 
 void	*ft_memset(void *b, int c, size_t len)
 {

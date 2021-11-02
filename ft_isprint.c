@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/18 17:38:56 by zakdim            #+#    #+#             */
-/*   Updated: 2021/11/02 16:55:18 by aqadil           ###   ########.fr       */
+/*   Created: 2021/11/02 17:01:21 by aqadil            #+#    #+#             */
+/*   Updated: 2021/11/02 17:18:22 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdio.h>
 
 int		ft_isprint(int c)
 {

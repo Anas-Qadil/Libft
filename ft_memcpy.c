@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/17 14:46:27 by zakdim            #+#    #+#             */
-/*   Updated: 2021/11/02 16:55:08 by aqadil           ###   ########.fr       */
+/*   Created: 2021/11/02 17:19:47 by aqadil            #+#    #+#             */
+/*   Updated: 2021/11/02 17:19:54 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdio.h>
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {

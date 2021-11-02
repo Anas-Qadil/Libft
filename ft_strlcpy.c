@@ -1,33 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/02 17:20:32 by aqadil            #+#    #+#             */
-/*   Updated: 2021/11/02 17:20:38 by aqadil           ###   ########.fr       */
+/*   Created: 2021/11/02 17:20:41 by aqadil            #+#    #+#             */
+/*   Updated: 2021/11/02 17:20:42 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
-char		*ft_strchr(const char *s, int c)
-{
-	char	c3;
-	char	*str;
-	int		i;
-
-	c3 = (char)c;
-	str = (char *)s;
-	i = 0;
-	if (c3 == '\0')
-		return (str + ft_strlen(str));
-	while (str[i])
-	{
-		if (str[i] == c3)
-			return (str + i);
-		i++;
-	}
-	return (NULL);
-}

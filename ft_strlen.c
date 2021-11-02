@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/16 12:51:27 by zakdim            #+#    #+#             */
-/*   Updated: 2021/11/02 16:54:49 by aqadil           ###   ########.fr       */
+/*   Created: 2021/11/02 17:01:23 by aqadil            #+#    #+#             */
+/*   Updated: 2021/11/02 17:21:04 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdio.h>
 
 size_t	ft_strlen(const char *str)
 {

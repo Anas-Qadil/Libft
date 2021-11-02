@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/21 11:22:46 by zakdim            #+#    #+#             */
-/*   Updated: 2021/11/02 16:55:11 by aqadil           ###   ########.fr       */
+/*   Created: 2021/11/02 17:17:56 by aqadil            #+#    #+#             */
+/*   Updated: 2021/11/02 17:19:30 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdio.h>
 
 int		ft_memcmp(const void *s1, const void *s2, size_t n)
 {

@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/17 08:48:32 by zakdim            #+#    #+#             */
-/*   Updated: 2021/11/02 16:55:36 by aqadil           ###   ########.fr       */
+/*   Created: 2021/11/02 17:05:59 by aqadil            #+#    #+#             */
+/*   Updated: 2021/11/02 17:06:19 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdio.h>
 
 void	ft_bzero(void *s, size_t n)
 {

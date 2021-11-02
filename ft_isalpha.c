@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/18 08:56:09 by zakdim            #+#    #+#             */
-/*   Updated: 2021/11/02 16:55:29 by aqadil           ###   ########.fr       */
+/*   Created: 2021/11/02 17:01:15 by aqadil            #+#    #+#             */
+/*   Updated: 2021/11/02 17:17:43 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdio.h>
 
 int		ft_isalpha(int c)
 {

@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/18 13:56:11 by zakdim            #+#    #+#             */
-/*   Updated: 2021/11/02 16:54:33 by aqadil           ###   ########.fr       */
+/*   Created: 2021/11/02 17:22:07 by aqadil            #+#    #+#             */
+/*   Updated: 2021/11/02 17:22:14 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdio.h>
 
 int		ft_toupper(int c)
 {

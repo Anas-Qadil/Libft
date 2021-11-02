@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/21 20:12:48 by zakdim            #+#    #+#             */
-/*   Updated: 2021/11/02 16:55:15 by aqadil           ###   ########.fr       */
+/*   Created: 2021/11/02 17:17:53 by aqadil            #+#    #+#             */
+/*   Updated: 2021/11/02 17:18:32 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdio.h>
 
 void				*ft_memchr(const void *s, int c, size_t n)
 {

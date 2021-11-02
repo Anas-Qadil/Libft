@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/20 20:06:46 by zakdim            #+#    #+#             */
-/*   Updated: 2021/11/02 16:55:04 by aqadil           ###   ########.fr       */
+/*   Created: 2021/11/02 17:20:05 by aqadil            #+#    #+#             */
+/*   Updated: 2021/11/02 17:20:12 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdio.h>
 
 void		*ft_memmove(void *dst, const void *src, size_t len)
 {

@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/18 14:57:34 by zakdim            #+#    #+#             */
-/*   Updated: 2021/11/02 16:54:38 by aqadil           ###   ########.fr       */
+/*   Created: 2021/11/02 17:21:55 by aqadil            #+#    #+#             */
+/*   Updated: 2021/11/02 17:22:01 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdio.h>
 
 int		ft_tolower(int c)
 {

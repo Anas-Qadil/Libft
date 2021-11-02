@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/16 13:34:55 by zakdim            #+#    #+#             */
-/*   Updated: 2021/11/02 16:55:38 by aqadil           ###   ########.fr       */
+/*   Created: 2021/11/02 17:05:08 by aqadil            #+#    #+#             */
+/*   Updated: 2021/11/02 17:05:38 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdio.h>
 
 int	ft_atoi(const char *str)
 {

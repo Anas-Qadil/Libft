@@ -5,18 +5,17 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/01 10:45:27 by aqadil            #+#    #+#             */
-/*   Updated: 2021/11/02 16:55:52 by aqadil           ###   ########.fr       */
+/*   Created: 2021/11/02 17:01:13 by aqadil            #+#    #+#             */
+/*   Updated: 2021/11/02 17:17:25 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-#include <ctype.h>
 
-int ft_isalnum(int c)
+int		ft_isalnum(int c)
 {
-    if(((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')) ||
-        (c >= '0' && c <= '9'))
-        return (1);
-    return (0);
+	if ((ft_isalpha(c) == 1) || (ft_isdigit(c) == 1))
+		return (1);
+	else
+		return (0);
 }

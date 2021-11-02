@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/16 18:50:31 by zakdim            #+#    #+#             */
-/*   Updated: 2021/11/02 16:54:46 by aqadil           ###   ########.fr       */
+/*   Created: 2021/11/02 17:21:14 by aqadil            #+#    #+#             */
+/*   Updated: 2021/11/02 17:21:22 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdio.h>
 
 int		ft_strncmp(const char *s1, const char *s2, size_t n)
 {

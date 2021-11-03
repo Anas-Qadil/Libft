@@ -1,22 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/02 17:20:18 by aqadil            #+#    #+#             */
-/*   Updated: 2021/11/03 16:46:39 by aqadil           ###   ########.fr       */
+/*   Created: 2021/11/03 16:50:15 by aqadil            #+#    #+#             */
+/*   Updated: 2021/11/03 16:53:39 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <string.h>
 
-void	*ft_memset(void *b, int c, size_t len)
+char    **ft_split(char const *s, char c)
 {
-	char *save = b;
-	while (len--)
-		*(unsigned char *)b++ = (unsigned char)c;
-	return (save);
+    
+}
+
+int main(void)
+{
+    
 }

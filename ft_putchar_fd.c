@@ -1,22 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/02 17:20:18 by aqadil            #+#    #+#             */
-/*   Updated: 2021/11/03 16:46:39 by aqadil           ###   ########.fr       */
+/*   Created: 2021/11/03 16:19:46 by aqadil            #+#    #+#             */
+/*   Updated: 2021/11/03 16:46:27 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-#include <string.h>
+#include <unistd.h>
 
-void	*ft_memset(void *b, int c, size_t len)
+void ft_putchar_fd(char c, int fd)
 {
-	char *save = b;
-	while (len--)
-		*(unsigned char *)b++ = (unsigned char)c;
-	return (save);
+    write(fd, &c, 1);
 }

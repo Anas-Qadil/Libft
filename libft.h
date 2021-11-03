@@ -6,7 +6,7 @@
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 17:22:31 by aqadil            #+#    #+#             */
-/*   Updated: 2021/11/03 14:48:48 by aqadil           ###   ########.fr       */
+/*   Updated: 2021/11/03 16:21:34 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,5 +41,9 @@ void        *ft_calloc(size_t count, size_t size);
 char        *ft_strdup(const char *s1);
 char        *ft_substr(char const *s, unsigned int start, size_t len);
 char        *ft_strjoin(char const *s1, char const *s2);
+void        ft_putchar_fd(char c, int fd);
+void        ft_putstr_fd(char *s, int fd);
+void        ft_putendl_fd(char *s, int fd);
+void        ft_putnbr_fd(int n, int fd);
 
 #endif

@@ -6,11 +6,10 @@
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 13:21:30 by aqadil            #+#    #+#             */
-/*   Updated: 2021/11/03 14:03:15 by aqadil           ###   ########.fr       */
+/*   Updated: 2021/11/03 14:06:31 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//uncompleted
 
 #include <stdio.h>
 #include <stdlib.h>

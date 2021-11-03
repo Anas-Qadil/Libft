@@ -6,7 +6,7 @@
 #    By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/02 17:26:28 by aqadil            #+#    #+#              #
-#    Updated: 2021/11/03 13:36:38 by aqadil           ###   ########.fr        #
+#    Updated: 2021/11/03 14:49:03 by aqadil           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,7 +39,8 @@ SRC =   ft_memset.c     \
 		ft_atoi.c       \
 		ft_calloc.c		\
 		ft_strdup.c		\
-		ft_substr.c
+		ft_substr.c		\
+		ft_strjoin.c
 
 
 OBJECTS = $(SRC:.c=.o)

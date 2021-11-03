@@ -6,32 +6,34 @@
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 17:05:08 by aqadil            #+#    #+#             */
-/*   Updated: 2021/11/03 11:11:09 by aqadil           ###   ########.fr       */
+/*   Updated: 2021/11/03 13:09:56 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
+
 int	ft_atoi(const char *str)
 {
-	int j;
-	int len;
-	long int res;
+	int i;
+	int sign;
+	int result;
 
-	j = 0;
-	len = 1;
-	res = 0;
-	while (str[j] == ' ' || str[j] == '\n' || str[j] == '\t' || str[j] == '\r'
-			|| str[j] == '\f' || str[j] == '\v')
-		j++;
-	if (str[j] == '-')
-		len = -1;
-	if (str[j] == '-' || str[j] == '+')
-		j++;
-	while (str[j] && str[j] >= '0' && str[j] <= '9')
+	i = 0;
+	sign = 1;
+	result = 0;
+	while (str[i] == ' ' || str[i] == '\n' || str[i] == '\t' || str[i] == '\r'
+			|| str[i] == '\f' || str[i] == '\v')
+		i++;
+	if (str[i] == '-')
+		sign = -1;
+	if (str[i] == '-' || str[i] == '+')
+		i++;
+	while (str[i] && str[i] >= '0' && str[i] <= '9')
 	{
-		res = (res * 10) + (str[j] - '0');
-		j++;
+		result = (result * 10) + (str[i] - 48);
+		i++;
 	}
-	return (res * len);
+	return (result * sign);
 }

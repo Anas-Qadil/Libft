@@ -6,7 +6,7 @@
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 17:22:31 by aqadil            #+#    #+#             */
-/*   Updated: 2021/11/03 11:22:10 by aqadil           ###   ########.fr       */
+/*   Updated: 2021/11/03 13:22:29 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,5 +38,7 @@ void		ft_bzero(void *s, size_t n);
 void		*ft_memcpy(void *dst, const void *src, size_t n);
 void		*ft_memset(void *b, int c, size_t len);
 void        *ft_calloc(size_t count, size_t size);
+char        *ft_strdup(const char *s1);
+char        *ft_substr(char const *s, unsigned int start, size_t len);
 
 #endif

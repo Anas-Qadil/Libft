@@ -6,7 +6,7 @@
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 17:22:31 by aqadil            #+#    #+#             */
-/*   Updated: 2021/11/04 16:32:38 by aqadil           ###   ########.fr       */
+/*   Updated: 2021/11/04 19:47:13 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,6 +59,7 @@ void        ft_lstadd_front(t_list **lst, t_list *new);
 int         ft_lstsize(t_list *lst);
 t_list      *ft_lstlast(t_list *lst);
 void ft_lstadd_back(t_list **lst, t_list *new);
+char **ft_split(char const *s, char c);
 
 
 #endif

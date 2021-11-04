@@ -1,40 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/03 13:21:30 by aqadil            #+#    #+#             */
-/*   Updated: 2021/11/04 11:02:53 by aqadil           ###   ########.fr       */
+/*   Created: 2021/11/04 11:06:28 by aqadil            #+#    #+#             */
+/*   Updated: 2021/11/04 11:45:59 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include <stdio.h>
 #include <stdlib.h>
 
-char *ft_substr(char const *s, unsigned int start, size_t len)
-{
-    char *subString;
 
-    if (s == 0)
+char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
+{
+    char *ptr;
+    int size = 0;
+
+    if (!s || !f)
         return (NULL);
-    if (start >= len)
-    {
-        subString = malloc(1);
-        *subString = '\0';
-        return (subString);       
-    }
-    subString = malloc(sizeof(char) * (len + 1));
-    if (subString == NULL)
+    
+    while (s[size])
+        size++;
+    ptr = (char *)malloc(sizeof(char) * (size + 1));
+    if (ptr == NULL)
         return (NULL);
-    int i = -1;
-    while (s[start] && len--)
+    int j = 0;
+    while (j < size)
     {
-        subString[++i] = ((char *)s)[start];
-        start++;
+        ptr[j] = f(j, s[j]);
+        j++;
     }
-    subString[i + 1] = '\0';
-    return (subString);
+    ptr[j] = '\0';
+    return (ptr);
 }

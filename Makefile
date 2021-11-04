@@ -6,7 +6,7 @@
 #    By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/02 17:26:28 by aqadil            #+#    #+#              #
-#    Updated: 2021/11/04 14:15:23 by aqadil           ###   ########.fr        #
+#    Updated: 2021/11/04 16:32:30 by aqadil           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,7 +46,13 @@ SRC =   ft_memset.c     \
 		ft_strmapi.c	\
 		ft_putstr_fd.c	\
 		ft_putendl_fd.c	\
-		ft_putnbr_fd.c
+		ft_putnbr_fd.c	\
+		ft_lstnew.c		\
+		ft_lstadd_front.c \
+		ft_lstsize.c	\
+		ft_lstlast.c	\
+		ft_lstadd_back.c
+		
 
 OBJECTS = $(SRC:.c=.o)
 

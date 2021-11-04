@@ -6,13 +6,13 @@
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 17:22:31 by aqadil            #+#    #+#             */
-/*   Updated: 2021/11/04 14:15:04 by aqadil           ###   ########.fr       */
+/*   Updated: 2021/11/04 16:32:38 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#ifndef LIBFT_H__
+# define LIBFT_H__
 
 # include <stdio.h>
 
@@ -46,5 +46,19 @@ void        ft_putstr_fd(char *s, int fd);
 void        ft_putendl_fd(char *s, int fd);
 void        ft_putnbr_fd(int n, int fd);
 char        *ft_strtrim(char const *s1, char const *set);
+
+// the freaking lists
+    typedef struct s_list
+    {
+        void *content;
+        struct s_list *next;
+    } t_list;
+    
+t_list      *ft_lstnew(void *content);
+void        ft_lstadd_front(t_list **lst, t_list *new);
+int         ft_lstsize(t_list *lst);
+t_list      *ft_lstlast(t_list *lst);
+void ft_lstadd_back(t_list **lst, t_list *new);
+
 
 #endif

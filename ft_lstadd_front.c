@@ -6,7 +6,7 @@
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 15:26:06 by aqadil            #+#    #+#             */
-/*   Updated: 2021/11/04 15:52:52 by aqadil           ###   ########.fr       */
+/*   Updated: 2021/11/05 13:17:48 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 void ft_lstadd_front(t_list **lst, t_list *new)
 {
-    new->next = (*lst);
+    new->next = *lst;
     *lst = new;
 }
 /*

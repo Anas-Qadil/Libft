@@ -6,7 +6,7 @@
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 17:22:31 by aqadil            #+#    #+#             */
-/*   Updated: 2021/11/05 08:41:46 by aqadil           ###   ########.fr       */
+/*   Updated: 2021/11/05 10:19:09 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,7 @@ void        ft_putstr_fd(char *s, int fd);
 void        ft_putendl_fd(char *s, int fd);
 void        ft_putnbr_fd(int n, int fd);
 char        *ft_strtrim(char const *s1, char const *set);
+void ft_striteri(char *s, void (*f)(unsigned int, char*));
 
 // the freaking lists
     typedef struct s_list

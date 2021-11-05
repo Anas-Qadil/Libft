@@ -6,8 +6,19 @@
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 10:09:10 by aqadil            #+#    #+#             */
-/*   Updated: 2021/11/05 10:09:16 by aqadil           ###   ########.fr       */
+/*   Updated: 2021/11/05 10:24:15 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
+#include "libft.h"
+
+void ft_lstdelone(t_list *lst, void (*del)(void *))
+{
+    
+}
+
+int main()
+{
+    
+}

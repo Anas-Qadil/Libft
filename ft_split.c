@@ -6,7 +6,7 @@
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 16:50:15 by aqadil            #+#    #+#             */
-/*   Updated: 2021/11/04 20:24:53 by aqadil           ###   ########.fr       */
+/*   Updated: 2021/11/05 08:39:51 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,7 +77,6 @@ char **ft_split(char const *s, char c)
             str[k] = createWord(s, start, end);
             //printf("%d %s | ",k, str[k]);
             k++;
-            
         }
         else
             i++;

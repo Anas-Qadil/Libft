@@ -6,7 +6,7 @@
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 11:06:28 by aqadil            #+#    #+#             */
-/*   Updated: 2021/11/04 11:45:59 by aqadil           ###   ########.fr       */
+/*   Updated: 2021/11/05 09:51:04 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
 
     if (!s || !f)
         return (NULL);
-    
     while (s[size])
         size++;
     ptr = (char *)malloc(sizeof(char) * (size + 1));

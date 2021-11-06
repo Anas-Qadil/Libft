@@ -6,7 +6,7 @@
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 17:21:39 by aqadil            #+#    #+#             */
-/*   Updated: 2021/11/02 18:21:09 by aqadil           ###   ########.fr       */
+/*   Updated: 2021/11/05 15:40:45 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,15 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int sizeOfString;
-	
-	sizeOfString = 0;
-	while (s[sizeOfString])
-		sizeOfString++;
+	int	size_of_string;
+
+	size_of_string = 0;
+	while (s[size_of_string])
+		size_of_string++;
 	if ((char )c == '\0')
-		return ((char *)(s + sizeOfString));
-	while (sizeOfString-- > 0)
-		if (((char *)s)[sizeOfString] == (char )c)
-			return (&((char *)s)[sizeOfString]);
+		return ((char *)(s + size_of_string));
+	while (size_of_string-- > 0)
+		if (((char *)s)[size_of_string] == (char )c)
+			return (&((char *)s)[size_of_string]);
 	return (NULL);
 }

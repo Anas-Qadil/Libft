@@ -6,25 +6,19 @@
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 11:11:51 by aqadil            #+#    #+#             */
-/*   Updated: 2021/11/03 11:39:54 by aqadil           ###   ########.fr       */
+/*   Updated: 2021/11/06 13:30:02 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include "libft.h"
 
-void    *ft_calloc(size_t count, size_t size)
+void	*ft_calloc(size_t count, size_t size)
 {
-    
-    void *ptr;
-    void *save;
+	void	*ptr;
 
-    ptr = malloc(count * size);
-    if (ptr == 0)
-        return (ptr);
-    save = ptr;
-    while (*(char *)ptr)
-        *(char *)ptr++ = 0;
-    return (save); 
+	ptr = malloc(count * size);
+	if (ptr == 0)
+		return (ptr);
+	ft_memset(ptr, 0, count * size);
+	return (ptr);
 }

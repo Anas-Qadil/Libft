@@ -6,18 +6,18 @@
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 17:01:23 by aqadil            #+#    #+#             */
-/*   Updated: 2021/11/02 17:46:51 by aqadil           ###   ########.fr       */
+/*   Updated: 2021/11/06 09:50:37 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 size_t	ft_strlen(const char *str)
 {
-	int i;
+	int	size;
 
-	i = 0;
+	size = 0;
 	while (*str++)
-		i++;
-	return (i);
+		size++;
+	return (size);
 }

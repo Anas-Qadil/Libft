@@ -6,13 +6,13 @@
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 17:21:14 by aqadil            #+#    #+#             */
-/*   Updated: 2021/11/02 18:27:31 by aqadil           ###   ########.fr       */
+/*   Updated: 2021/11/06 11:45:17 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int		ft_strncmp(const char *s1, const char *s2, size_t n)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	while (n-- && (*s1 || *s2))
 		if (*(unsigned char *)s1++ != *(unsigned char *)s2++)

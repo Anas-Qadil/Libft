@@ -6,21 +6,21 @@
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 17:20:32 by aqadil            #+#    #+#             */
-/*   Updated: 2021/11/02 18:16:19 by aqadil           ###   ########.fr       */
+/*   Updated: 2021/11/06 10:51:31 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
-char		*ft_strchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
-	int sizeOfString;
-	
-	sizeOfString = 0;
-	while (s[sizeOfString])
-		sizeOfString++;
+	int	size_of_string;
+
+	size_of_string = 0;
+	while (s[size_of_string])
+		size_of_string++;
 	if ((char )c == '\0')
-		return ((char *)(s + sizeOfString));
+		return ((char *)(s + size_of_string));
 	while (*s)
 		if (*(char *)s++ == (char )c)
 			return ((char *)--s);

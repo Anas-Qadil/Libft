@@ -6,42 +6,33 @@
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 14:31:58 by aqadil            #+#    #+#             */
-/*   Updated: 2021/11/04 12:36:12 by aqadil           ###   ########.fr       */
+/*   Updated: 2021/11/05 17:56:24 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include <stdlib.h>
+#include "libft.h"
 
-char    *ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-    int s1Size = 0;
-    int s2Size = 0;
-    int size;
-    char *ptr;
-    int i = 0;
-    if (!s1 || !s2)
-        return (NULL);
-    while (s1[s1Size])
-        s1Size++;
-    while (s2[s2Size])
-        s2Size++;
-    size = s2Size + s1Size;
-    ptr = malloc((sizeof(char))*(size + 1));
-    if (ptr == NULL)
-        return (NULL);
-    while (s1[i])
-    {
-        ptr[i] = ((char *)s1)[i];
-        i++;
-    }
-    int j = 0;
-    while (s2[j])
-    {
-        ptr[i] = ((char *)s2)[j];
-        i++;
-        j++;
-    }
-    ptr[i] = '\0';
-    return (ptr);
+	int		s1_size;
+	int		s2_size;
+	char	*ptr;
+	int		i;
+
+	i = -1;
+	if (!s1 || !s2)
+		return (NULL);
+	s1_size = ft_strlen(s1);
+	s2_size = ft_strlen(s2);
+	ptr = malloc((sizeof(char)) * ((s2_size + s1_size) + 1));
+	if (ptr == NULL)
+		return (NULL);
+	while (s1[++i])
+		ptr[i] = ((char *)s1)[i];
+	s1_size = -1;
+	while (s2[++s1_size])
+		ptr[i++] = ((char *)s2)[s1_size];
+	ptr[i] = '\0';
+	return (ptr);
 }

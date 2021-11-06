@@ -6,73 +6,74 @@
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 14:53:06 by aqadil            #+#    #+#             */
-/*   Updated: 2021/11/04 19:48:21 by aqadil           ###   ########.fr       */
+/*   Updated: 2021/11/06 15:35:59 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <stdlib.h>
+#include "libft.h"
 
-int checker(char c,const char *set)
+int	checker(char c, const char *set)
 {
-    while (*set)
-        if (*set++ == (const char)c)
-            return(1);
-    return (0);
+	while (*set)
+		if (*set++ == (const char)c)
+			return (1);
+	return (0);
 }
 
-char *ft_strtrim(char const *s1, char const *set)
+int	front_index(const char *s1, const char *set)
 {
-    int saveFront = 0;
-    int saveback;
-    int i = -1;
-    char *result;
-    int size;
-   //doing the front match
-   if (!s1 || !set)
-        return (NULL);
-    while (s1[++i])
-        if(checker(s1[i], set))
-            saveFront++;
-        else
-            break;
-    // doing the back match
-    saveback = 0;
-    i = 0;
-    while (s1[i]) i++;
-    if (saveFront == i)
-    {
-        result = (char *)malloc(sizeof(char));
-        if (result == NULL)
-            return (NULL);
-        result[0] = '\0';
-        return(result);
-    }
-    
-    // satrt
-    saveback = i;
-    while (i-- > 0)
-        if(checker(s1[i], set))
-            saveback = i;
-        else
-            break;
-    size = saveback - saveFront + 1;
-    result = (char *)malloc(sizeof(char)*size);
-    if(result == NULL)
-        return (NULL);
-    i = 0;
+	int	i;
+	int	savefront;
 
-    while (saveFront < saveback)
-    {
-        result[i] = s1[saveFront];
-        i++;
-        saveFront++;
-    }
-    result[i] = '\0';
-    return (result);
+	i = -1;
+	savefront = 0;
+	while (s1[++i])
+	{
+		if (checker(s1[i], set))
+			savefront++;
+		else
+			break ;
+	}
+	return (savefront);
 }
-/*
-int main(int ac, char **argv)
+
+int	back_index(const char *s1, int i, const char *set)
 {
-    printf("%s", ft_strtrim(argv[1], argv[2]));
-}*/
+	int	saveback;
+
+	saveback = i;
+	while (i-- > 0)
+	{	
+		if (checker(s1[i], set))
+			saveback = i;
+		else
+			break ;
+	}
+	return (saveback);
+}
+
+char	*ft_strtrim(char const *s1, char const *set)
+{
+	int		savefront;
+	int		saveback;
+	int		i;
+	char	*result;
+
+	if (!s1 || !set)
+		return (NULL);
+	savefront = front_index(s1, set);
+	i = ft_strlen(s1);
+	if (savefront == i)
+		return (ft_strdup(""));
+	saveback = back_index(s1, i, set);
+	result = (char *)malloc(sizeof(char) * (saveback - savefront + 1));
+	if (result == NULL)
+		return (NULL);
+	i = 0;
+	while (savefront < saveback)
+		result[i++] = s1[savefront++];
+	result[i] = '\0';
+	return (result);
+}

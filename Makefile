@@ -6,7 +6,7 @@
 #    By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/02 17:26:28 by aqadil            #+#    #+#              #
-#    Updated: 2021/11/05 13:21:25 by aqadil           ###   ########.fr        #
+#    Updated: 2021/11/06 14:23:06 by aqadil           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,7 +43,6 @@ SRC =   ft_memset.c     \
 		ft_strjoin.c	\
 		ft_strtrim.c	\
 		ft_putchar_fd.c	\
-		ft_strmapi.c	\
 		ft_putstr_fd.c	\
 		ft_putendl_fd.c	\
 		ft_putnbr_fd.c	\
@@ -54,6 +53,7 @@ SRC =   ft_memset.c     \
 		ft_lstadd_back.c \
 		ft_split.c		\
 		ft_itoa.c		\
+		ft_strmapi.c	\
 		ft_striteri.c	\
 		ft_lstdelone.c	\
 		ft_lstclear.c	\

@@ -6,12 +6,12 @@
 #    By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/02 17:26:28 by aqadil            #+#    #+#              #
-#    Updated: 2021/11/07 13:09:53 by aqadil           ###   ########.fr        #
+#    Updated: 2021/11/07 14:26:49 by aqadil           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
+CC			= gcc
 NAME		= libft.a
-
 SRCS		= ft_memset.c \
 			  ft_bzero.c \
 			  ft_memcpy.c \
@@ -64,13 +64,13 @@ BNS_OBJS	= $(BNS_SRCS:%.c=%.o)
 FLAGS		= -Wall -Werror -Wextra
 
 $(NAME):
-	gcc $(FLAGS) -c $(SRCS) -I ./libft.h
+	$(CC) $(FLAGS) -c $(SRCS) -I ./libft.h
 	ar rc $(NAME) $(OBJS)
 
 all: $(NAME)
 
 bonus: $(NAME)
-	gcc $(FLAGS) -c $(BNS_SRCS) -I ./libft.h
+	$(CC) $(FLAGS) -c $(BNS_SRCS) -I ./libft.h
 	ar rc $(NAME) $(BNS_OBJS)
 
 clean:

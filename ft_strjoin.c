@@ -6,11 +6,10 @@
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 14:31:58 by aqadil            #+#    #+#             */
-/*   Updated: 2021/11/05 17:56:24 by aqadil           ###   ########.fr       */
+/*   Updated: 2021/11/07 14:05:41 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)

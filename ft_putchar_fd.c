@@ -6,13 +6,11 @@
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 16:19:46 by aqadil            #+#    #+#             */
-/*   Updated: 2021/11/05 15:54:53 by aqadil           ###   ########.fr       */
+/*   Updated: 2021/11/07 14:04:57 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <unistd.h>
-#include <fcntl.h>
+#include "libft.h"
 
 void	ft_putchar_fd(char c, int fd)
 {

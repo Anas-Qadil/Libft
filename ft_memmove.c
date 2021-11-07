@@ -6,11 +6,11 @@
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 17:20:05 by aqadil            #+#    #+#             */
-/*   Updated: 2021/11/06 10:35:06 by aqadil           ###   ########.fr       */
+/*   Updated: 2021/11/07 14:04:49 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {

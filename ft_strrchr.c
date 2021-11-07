@@ -6,11 +6,11 @@
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 17:21:39 by aqadil            #+#    #+#             */
-/*   Updated: 2021/11/05 15:40:45 by aqadil           ###   ########.fr       */
+/*   Updated: 2021/11/07 14:06:06 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {

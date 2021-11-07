@@ -6,14 +6,13 @@
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 08:41:14 by aqadil            #+#    #+#             */
-/*   Updated: 2021/11/06 14:52:55 by aqadil           ###   ########.fr       */
+/*   Updated: 2021/11/07 14:04:00 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
 
-int	sizef(int n)
+static int	sizef(int n)
 {
 	int	size;
 
@@ -28,7 +27,7 @@ int	sizef(int n)
 	return (size);
 }
 
-char	*fucking_min_int(void)
+static char	*fucking_min_int(void)
 {
 	char	*str;
 
@@ -48,7 +47,7 @@ char	*fucking_min_int(void)
 	return (str);
 }
 
-void	fill_the_array(char *str, int size, int sign, int n)
+static void	fill_the_array(char *str, int size, int sign, int n)
 {
 	while (--size != -1)
 	{

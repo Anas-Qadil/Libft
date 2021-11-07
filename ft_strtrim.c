@@ -6,15 +6,13 @@
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 14:53:06 by aqadil            #+#    #+#             */
-/*   Updated: 2021/11/06 15:35:59 by aqadil           ###   ########.fr       */
+/*   Updated: 2021/11/07 14:06:11 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
 #include "libft.h"
 
-int	checker(char c, const char *set)
+static int	checker(char c, const char *set)
 {
 	while (*set)
 		if (*set++ == (const char)c)
@@ -22,7 +20,7 @@ int	checker(char c, const char *set)
 	return (0);
 }
 
-int	front_index(const char *s1, const char *set)
+static int	front_index(const char *s1, const char *set)
 {
 	int	i;
 	int	savefront;
@@ -39,7 +37,7 @@ int	front_index(const char *s1, const char *set)
 	return (savefront);
 }
 
-int	back_index(const char *s1, int i, const char *set)
+static int	back_index(const char *s1, int i, const char *set)
 {
 	int	saveback;
 

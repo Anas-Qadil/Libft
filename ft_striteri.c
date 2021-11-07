@@ -6,11 +6,11 @@
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 12:54:46 by aqadil            #+#    #+#             */
-/*   Updated: 2021/11/05 15:48:35 by aqadil           ###   ########.fr       */
+/*   Updated: 2021/11/07 14:05:38 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {

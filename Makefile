@@ -6,7 +6,7 @@
 #    By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/02 17:26:28 by aqadil            #+#    #+#              #
-#    Updated: 2021/11/06 14:23:06 by aqadil           ###   ########.fr        #
+#    Updated: 2021/11/07 13:09:53 by aqadil           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,6 @@ NAME		= libft.a
 SRCS		= ft_memset.c \
 			  ft_bzero.c \
 			  ft_memcpy.c \
-			  ft_memccpy.c \
 			  ft_memmove.c \
 			  ft_memchr.c \
 			  ft_memcmp.c \
@@ -26,6 +25,7 @@ SRCS		= ft_memset.c \
 			  ft_strrchr.c \
 			  ft_strnstr.c \
 			  ft_strncmp.c \
+			  ft_striteri.c \
 			  ft_atoi.c \
 			  ft_isalpha.c \
 			  ft_isdigit.c \
@@ -64,13 +64,13 @@ BNS_OBJS	= $(BNS_SRCS:%.c=%.o)
 FLAGS		= -Wall -Werror -Wextra
 
 $(NAME):
-	gcc $(FLAGS) -c $(SRCS) -I libft.h
+	gcc $(FLAGS) -c $(SRCS) -I ./libft.h
 	ar rc $(NAME) $(OBJS)
 
 all: $(NAME)
 
 bonus: $(NAME)
-	gcc $(FLAGS) -c $(BNS_SRCS) -I libft.h
+	gcc $(FLAGS) -c $(BNS_SRCS) -I ./libft.h
 	ar rc $(NAME) $(BNS_OBJS)
 
 clean:
@@ -78,4 +78,4 @@ clean:
 
 fclean: clean
 	rm -f $(NAME)
-
+re: fclean all

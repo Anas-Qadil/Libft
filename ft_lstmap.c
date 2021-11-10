@@ -6,7 +6,7 @@
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 13:09:09 by aqadil            #+#    #+#             */
-/*   Updated: 2021/11/06 11:07:43 by aqadil           ###   ########.fr       */
+/*   Updated: 2021/11/08 12:47:16 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,20 +16,22 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*head;
 	t_list	*node;
+	t_list	*temp;
 
 	if (!lst)
 		return (NULL);
 	head = NULL;
-	while (lst)
+	temp = lst;
+	while (temp)
 	{
-		node = ft_lstnew(f(lst->content));
+		node = ft_lstnew(f(temp->content));
 		if (!node)
 		{
 			ft_lstclear(&head, del);
 			return (NULL);
 		}
 		ft_lstadd_back(&head, node);
-		lst = lst->next;
+		temp = temp->next;
 	}
 	return (head);
 }

@@ -6,7 +6,7 @@
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 14:02:06 by aqadil            #+#    #+#             */
-/*   Updated: 2021/11/07 14:05:04 by aqadil           ###   ########.fr       */
+/*   Updated: 2021/11/09 10:38:41 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,3 @@ void	ft_putendl_fd(char *s, int fd)
 		write(fd, "\n", 1);
 	}
 }
-
-/*
-int main(void)
-{
-	FILE *fp = open("test.txt", O_WRONLY);
-	ft_putendl_fd("hello worldendl", fp);
-}*/

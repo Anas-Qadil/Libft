@@ -6,11 +6,11 @@
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/06 14:21:18 by aqadil            #+#    #+#             */
-/*   Updated: 2021/11/06 14:28:45 by aqadil           ###   ########.fr       */
+/*   Updated: 2021/11/10 15:49:04 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"libft.h"
+#include"libft.h" 
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

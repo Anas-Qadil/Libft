@@ -6,7 +6,7 @@
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 08:41:14 by aqadil            #+#    #+#             */
-/*   Updated: 2021/11/07 14:04:00 by aqadil           ###   ########.fr       */
+/*   Updated: 2021/11/10 15:26:28 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ static int	sizef(int n)
 	int	size;
 
 	size = 0;
-	if (n == 0 || n == -0)
+	if (n == 0)
 		return (1);
 	while (n > 0)
 	{
@@ -27,7 +27,7 @@ static int	sizef(int n)
 	return (size);
 }
 
-static char	*fucking_min_int(void)
+static char	*fill_min_int(void)
 {
 	char	*str;
 
@@ -66,7 +66,7 @@ char	*ft_itoa(int n)
 
 	sign = 0;
 	if (n == -2147483648)
-		return (fucking_min_int());
+		return (fill_min_int());
 	if (n < 0)
 	{
 		sign = 1;

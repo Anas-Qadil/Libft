@@ -6,7 +6,7 @@
 /*   By: aqadil <aqadil@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 13:21:30 by aqadil            #+#    #+#             */
-/*   Updated: 2021/11/06 13:40:38 by aqadil           ###   ########.fr       */
+/*   Updated: 2021/11/09 09:14:23 by aqadil           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,9 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	char	*ptr;
 
 	i = 0;
-	if (s == '\0' || (long int)len < 0)
+	if (s == '\0' || len < 0)
 		return (NULL);
-	ptr = (char *)malloc(len + 1);
+	ptr = (char *)malloc((len + 1) * sizeof(char ));
 	if (ptr == NULL)
 		return (NULL);
 	while (start < ft_strlen(s) && i < len)
